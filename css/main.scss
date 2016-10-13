@@ -4,4 +4,30 @@
 
 p {
   color: red;
+  top: 50%;
 }
+.block {
+  width: 50%;
+}
+.left {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    background: blue;
+}
+.right {
+  background: yellow;
+  right: 0;
+  position: absolute;
+}
+.image {
+    height: 200px;
+    width: 200px;
+    background: url(../images/eric.png) no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: none;
+    background-position: center;
+    margin: 0 auto;
+}
+
