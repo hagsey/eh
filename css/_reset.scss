@@ -32,6 +32,7 @@ h5,
 p {
     font-size: inherit;
     line-height: 1.25em;
+    font-weight: 400;
 }
 strong {
     font-weight: bold;
@@ -74,11 +75,27 @@ h2 {
 font-size: 2.25em;
 }
 h3 {
-font-size: 1.75em;
+font-size: 2em;
 }
 h4 {
-font-size: 1em;
+font-size: 1.75em;
 }
 h5 {
-font-size: 0.8em;
+font-size: 1.5em;
+}
+
+
+/*
+==================
+CLEARFIX
+==================
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
 }

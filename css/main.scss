@@ -2,32 +2,55 @@
 @import 'grid';
 @import 'animate';
 
-p {
-  color: red;
-  top: 50%;
+/*
+===================
+VARIABLES
+===================
+*/
+
+$color-text: #ffffff;
+$color-background: #333333;
+
+/*
+===================
+PAGE SETTINGS
+===================
+*/
+
+body {
+  color: $color-text;
 }
-.block {
-  width: 50%;
+section {
+  background: $color-background;
 }
+
 .left {
     position: fixed;
     left: 0;
     height: 100%;
-    background: blue;
 }
 .right {
-  background: yellow;
   right: 0;
   position: absolute;
+  height: 100%;
+}
+.row-2 {
+  height: 50%;
+  width: 100%;
+}
+.row-3 {
+  height: 33.33%;
+  width: 100%;
+}
+.row-4 {
+  height: 25%;
+  width: 100%;
 }
 .image {
-    height: 200px;
-    width: 200px;
-    background: url(../images/eric.png) no-repeat;
-    background-size: cover;
-    border-radius: 50%;
-    background-repeat: none;
-    background-position: center;
-    margin: 0 auto;
+  background: transparent no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
-
+.profile-image {
+  background-image: url(../images/eric.png);
+}

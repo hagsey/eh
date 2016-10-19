@@ -31,7 +31,8 @@ h4,
 h5,
 p {
   font-size: inherit;
-  line-height: 1.25em; }
+  line-height: 1.25em;
+  font-weight: 400; }
 
 strong {
   font-weight: bold; }
@@ -72,13 +73,26 @@ h2 {
   font-size: 2.25em; }
 
 h3 {
-  font-size: 1.75em; }
+  font-size: 2em; }
 
 h4 {
-  font-size: 1em; }
+  font-size: 1.75em; }
 
 h5 {
-  font-size: 0.8em; }
+  font-size: 1.5em; }
+
+/*
+==================
+CLEARFIX
+==================
+*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
 
 .row {
   max-width: 1200px;
@@ -2390,32 +2404,50 @@ h5 {
   -webkit-animation-name: slideOutUp;
   animation-name: slideOutUp; }
 
-p {
-  color: red;
-  top: 50%; }
+/*
+===================
+VARIABLES
+===================
+*/
+/*
+===================
+PAGE SETTINGS
+===================
+*/
+body {
+  color: #ffffff; }
 
-.block {
-  width: 50%; }
+section {
+  background: #333333; }
 
 .left {
   position: fixed;
   left: 0;
-  height: 100%;
-  background: blue; }
+  height: 100%; }
 
 .right {
-  background: yellow;
   right: 0;
-  position: absolute; }
+  position: absolute;
+  height: 100%; }
+
+.row-2 {
+  height: 50%;
+  width: 100%; }
+
+.row-3 {
+  height: 33.33%;
+  width: 100%; }
+
+.row-4 {
+  height: 25%;
+  width: 100%; }
 
 .image {
-  height: 200px;
-  width: 200px;
-  background: url(../images/eric.png) no-repeat;
+  background: transparent no-repeat;
   background-size: cover;
-  border-radius: 50%;
-  background-repeat: none;
-  background-position: center;
-  margin: 0 auto; }
+  background-position: center center; }
+
+.profile-image {
+  background-image: url(../images/eric.png); }
 
 /*# sourceMappingURL=main.css.map */
