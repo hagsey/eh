@@ -1,5 +1,6 @@
 $(function() {
-  $("nav").on("click", "li", function() {
+  $("nav > ul > li").on("click", function() {
+    console.log("i'm listening")
     var id = $(this).data("nav"),
         $article = $(this).next("article[data-nav='" + id + "']"),
         $all_articles = $("nav").find("article"),

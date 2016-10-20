@@ -2458,7 +2458,7 @@ p::selection {
   background: #000;
   color: #fff; }
 
-h1, h4 {
+.title {
   font-family: "Rock Salt", cursive; }
 
 .site-title {
@@ -2488,15 +2488,15 @@ h1, h4 {
   bottom: 0;
   top: 0;
   width: 50%; }
-  .right ul {
+  .right .nav-container {
     height: 100%; }
-    .right ul li {
-      cursor: pointer; }
-      .right ul li h4 {
-        position: relative;
-        text-align: center;
-        line-height: 0;
-        top: 50%; }
+  .right .nav-container > li {
+    cursor: pointer; }
+    .right .nav-container > li h4 {
+      position: relative;
+      text-align: center;
+      line-height: 0;
+      top: 50%; }
 
 .social-icon {
   display: block;
@@ -2536,7 +2536,7 @@ h1, h4 {
   border-left: 1px solid rgba(255, 255, 255, 0.2); }
 
 .right .black-glass:hover {
-  background-color: rgba(255, 255, 255, 0.1); }
+  background-color: rgba(0, 0, 0, 0.3); }
 
 .left {
   width: 50%;
@@ -2548,6 +2548,11 @@ h1, h4 {
   bottom: 0;
   left: 20px; }
 
+/*
+=================
+ARTICLE
+=================
+*/
 article {
   height: 68%;
   margin: 0 auto;
@@ -2557,16 +2562,26 @@ article {
   padding: 1em;
   background: rgba(255, 98, 113, 0.49);
   color: #333; }
+  article h1, article h2, article h3, article h4, article h5, article p {
+    margin-bottom: 0.6em; }
+  article li {
+    padding-left: 1em;
+    margin-bottom: 0.5em; }
 
 article.about *,
-article.contact * {
+article.contact *,
+article.work * {
   color: #ffffff; }
 
 article.about {
   background-color: #3498db; }
+  article.about img {
+    width: 50%;
+    max-width: 300px;
+    float: right; }
 
 article.work {
-  background-color: #f1c40f; }
+  background-color: #ff6271; }
 
 article.resume {
   background-color: #f1f1d4; }
