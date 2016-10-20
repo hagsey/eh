@@ -48,7 +48,7 @@ body {
 
     .black-glass {
       background-image: url('../images/github.png');
-      background-size: 38%;
+      background-size: 28%;
       background-repeat: no-repeat;
       background-position: center;
     }
@@ -83,7 +83,7 @@ body {
     border-left: 1px solid rgba(255, 255, 255, 0.2);
 
 }
-.black-glass:hover {
+.right .black-glass:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
