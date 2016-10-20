@@ -4,45 +4,64 @@
   <title>Eric Hagemann</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/main.css">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 </head>
 <body>
-  <div class="site-wrapper">
-    <div class="target">
-    <nav class="panel panel-1" data-vibrancy-vibrance="100" data-vibrancy-brightness="20" data-vibrancy-blur="100">
+
+    <nav class="right">
       <ul>
-        <li class="button">
+        <li class="black-glass row-4" data-nav="1">
           <p>About</p>
         </li>
-        <li class="button">
+        <li class="black-glass row-4" data-nav="2">
           <p>Work Samples</p>
         </li>
-        <li class="button">
+        <li class="black-glass row-4" data-nav="3">
           <p>Resume</p>
         </li>
-        <li class="button">
+        <li class="black-glass row-4" data-nav="4">
           <p>Contact</p>
         </li>
       </ul>
     </nav>
-  </div>
-    <main>
+    <main class="left">
       <div class="main-info">
         <h3>Eric Hagemann</h3>
-        <h4>Coach</h4>
+        <p>MSc, CSCS</p>
+        <h4>Performance Coach</h4>
         <h4>Web Designer</h4>
         <h4>Writer</h4>
       </div>
+
+      <article class="about black-glass" hidden data-nav="1">
+        <div class="close"></div>
+        <h2>About</h2>
+        <p>Phasellus ullamcorper purus parturient aliquet adipiscing per vestibulum hendrerit sed vestibulum nulla leo curae purus purus consectetur cubilia aliquet facilisis mattis dictumst curae eu condimentum. Fringilla dapibus condimentum vestibulum lacus aptent nisi ut scelerisque eu a eros parturient a dapibus tellus parturient per urna id habitant posuere scelerisque sit sagittis dapibus. Vestibulum massa turpis sodales condimentum a parturient integer phasellus eros eget in facilisi ullamcorper suspendisse per eu venenatis cubilia ligula vestibulum sit a magnis. Commodo ante adipiscing parturient vestibulum dictum est mattis parturient pretium est dapibus a egestas id hendrerit condimentum id a volutpat ac mattis. </p>
+
+        </p>
+      </article>
+      <article class="work black-glass" hidden data-nav="2">
+        <div class="close"></div>
+        <h2>Work Samples</h2>
+
+        <p>Molestie morbi adipiscing cum justo duis senectus ad mi cras a elit fusce in adipiscing urna integer suspendisse dis ligula. Urna condimentum semper a suspendisse ac nam iaculis a a cursus sed mi sagittis a suspendisse leo elementum. Sem diam cum blandit et suspendisse bibendum a in suspendisse suspendisse elit ut vestibulum laoreet accumsan a aenean et venenatis urna malesuada ac accumsan ante vehicula scelerisque morbi. A a fusce a elit parturient ipsum parturient bibendum enim risus taciti sagittis mauris scelerisque ultricies netus nullam a a porttitor elit posuere neque luctus. Aenean torquent felis maecenas consectetur himenaeos vestibulum habitasse vitae in risus at morbi sociosqu vulputate ac aenean primis suspendisse. Fames adipiscing habitant senectus condimentum condimentum adipiscing ullamcorper est hendrerit ornare parturient scelerisque felis sagittis amet blandit fames ullamcorper luctus iaculis litora malesuada.</p>
+        </p>
+      </article>
+      <article class="resume black-glass" hidden data-nav="3">
+        <div class="close"></div>
+        <h2>Resume</h2>
+
+        <p>Molestie morbi adipiscing cum justo duis senectus ad mi cras a elit fusce in adipiscing urna integer suspendisse dis ligula. Urna condimentum semper a suspendisse ac nam iaculis a a cursus sed mi sagittis a suspendisse leo elementum. Sem diam cum blandit et suspendisse bibendum a in suspendisse suspendisse elit ut vestibulum laoreet accumsan a aenean et venenatis urna malesuada ac accumsan ante vehicula scelerisque morbi. A a fusce a elit parturient ipsum parturient bibendum enim risus taciti sagittis mauris scelerisque ultricies netus nullam a a porttitor elit posuere neque luctus. Aenean torquent felis maecenas consectetur himenaeos vestibulum habitasse vitae in risus at morbi sociosqu vulputate ac aenean primis suspendisse. Fames adipiscing habitant senectus condimentum condimentum adipiscing ullamcorper est hendrerit ornare parturient scelerisque felis sagittis amet blandit fames ullamcorper luctus iaculis litora malesuada.</p>
+        </p>
+      </article>
+      <article class="contact black-glass" hidden data-nav="4">
+        <div class="close"></div>
+        <h2>Contact</h2>
+
+        <p>Molestie morbi adipiscing cum justo duis senectus ad mi cras a elit fusce in adipiscing urna integer suspendisse dis ligula. Urna condimentum semper a suspendisse ac nam iaculis a a cursus sed mi sagittis a suspendisse leo elementum. Sem diam cum blandit et suspendisse bibendum a in suspendisse suspendisse elit ut vestibulum laoreet accumsan a aenean et venenatis urna malesuada ac accumsan ante vehicula scelerisque morbi. A a fusce a elit parturient ipsum parturient bibendum enim risus taciti sagittis mauris scelerisque ultricies netus nullam a a porttitor elit posuere neque luctus. Aenean torquent felis maecenas consectetur himenaeos vestibulum habitasse vitae in risus at morbi sociosqu vulputate ac aenean primis suspendisse. Fames adipiscing habitant senectus condimentum condimentum adipiscing ullamcorper est hendrerit ornare parturient scelerisque felis sagittis amet blandit fames ullamcorper luctus iaculis litora malesuada.</p>
+        </p>
+      </article>
     </main>
-  </div>
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="js/vibrancy-0.1.min.js"></script>
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/camanjs/4.0.0/caman.full.min.js"></script>
-  <script src="js/main.js"></script>
-  <script type="text/javascript">
-    $('.target').vibrancy({
-      panelClass: 'panel',
-      backgroundSrc: 'images/lizard.jpg'
-  });
-  </script>
 </body>
 </html>

@@ -2439,34 +2439,70 @@ VARIABLES
 PAGE SETTINGS
 ===================
 */
-nav {
-  padding: 20px 0;
-  top: 20px; }
+body, html {
+  width: 100%;
+  height: 100%;
+  color: #ffffff; }
 
-nav ul {
-  text-align: center; }
-
-nav li {
-  display: inline-block; }
-
-.target {
-  background: url("../images/lizard.jpg") no-repeat;
+body {
+  background: url("../images/blackwater.jpg") no-repeat;
   background-size: cover;
-  width: 800px;
-  height: 533px; }
+  overflow: hidden; }
 
-.panel {
+.right {
   position: absolute;
-  z-index: 9000;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 20%; }
+
+.black-glass {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1em;
   box-sizing: border-box; }
 
-.target .panel-1 {
-  font-size: 2em;
-  color: #000;
-  top: 30px;
-  left: 30px;
-  width: 392px;
-  height: 108px;
-  padding: 0.5em; }
+nav ul {
+  height: 100%; }
+  nav ul li {
+    cursor: pointer; }
+
+.left {
+  width: 80%;
+  height: 100%; }
+
+.right .row-4 {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative; }
+  .right .row-4 p {
+    position: relative;
+    text-align: center;
+    line-height: 0;
+    top: 50%; }
+
+.main-info {
+  position: absolute;
+  padding: 1em;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%; }
+
+article {
+  width: 80%;
+  height: 90%;
+  margin: 0 auto;
+  overflow-y: scroll;
+  position: relative;
+  padding: 1em;
+  top: 5%; }
+
+.close {
+  content: '';
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background: white;
+  position: absolute;
+  right: 1em;
+  cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */
