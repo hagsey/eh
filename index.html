@@ -4,40 +4,45 @@
   <title>Eric Hagemann</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/main.css">
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="js/main.js"></script>
 </head>
 <body>
-<div class="page-wrapper">
-  <header class="left col-2">
-    <section class="row-2 image profile-image">
-    </section>
-    <section class="row-2">
-      <h3>Eric Hagemann</h3>
-      <h4>Coach</h4>
-      <h4>Web Designer</h4>
-      <h4>Writer</h4>
-    </section>
-  </header>
-
-  <main class="right col-2">
-    <section class="row-4">
-      <h3>About</h3>
-    </section>
-    <section class="row-4">
-      <h3>Work Samples</h3>
-
-    </section>
-    <section class="row-4">
-      <h3>Resume</h3>
-
-    </section>
-    <section class="row-4">
-      <h3>Contact</h3>
-
-    </section>
-  </section>
-</main>
-
+  <div class="site-wrapper">
+    <div class="target">
+    <nav class="panel panel-1" data-vibrancy-vibrance="100" data-vibrancy-brightness="20" data-vibrancy-blur="100">
+      <ul>
+        <li class="button">
+          <p>About</p>
+        </li>
+        <li class="button">
+          <p>Work Samples</p>
+        </li>
+        <li class="button">
+          <p>Resume</p>
+        </li>
+        <li class="button">
+          <p>Contact</p>
+        </li>
+      </ul>
+    </nav>
+  </div>
+    <main>
+      <div class="main-info">
+        <h3>Eric Hagemann</h3>
+        <h4>Coach</h4>
+        <h4>Web Designer</h4>
+        <h4>Writer</h4>
+      </div>
+    </main>
+  </div>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/camanjs/4.0.0/caman.full.min.js"></script>
+  <script src="js/vibrancy-0.1.min.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript">
+    $('.target').vibrancy({
+      panelClass: 'panel',
+      backgroundSrc: 'images/lizard.jpg'
+  });
+  </script>
 </body>
 </html>

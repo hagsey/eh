@@ -67,19 +67,22 @@ img {
   border: 0; }
 
 h1 {
-  font-size: 3em; }
-
-h2 {
-  font-size: 2.25em; }
-
-h3 {
   font-size: 2em; }
 
+h2 {
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.17em; }
+
 h4 {
-  font-size: 1.75em; }
+  font-size: 1.12em; }
 
 h5 {
-  font-size: 1.5em; }
+  font-size: 0.83em; }
+
+h6 {
+  font-size: 0.75em; }
 
 /*
 ==================
@@ -189,6 +192,28 @@ CLEARFIX
 
 .margin-row .col-five-sixths {
   width: 83.25%; }
+
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5 {
+  width: 100%; }
+
+.row-1 {
+  height: 100%; }
+
+.row-2 {
+  height: 50%; }
+
+.row-3 {
+  height: 33.333%; }
+
+.row-4 {
+  height: 25%; }
+
+.row-5 {
+  height: 20%; }
 
 /*!
  * animate.css -http://daneden.me/animate
@@ -2414,40 +2439,34 @@ VARIABLES
 PAGE SETTINGS
 ===================
 */
-body {
-  color: #ffffff; }
+nav {
+  padding: 20px 0;
+  top: 20px; }
 
-section {
-  background: #333333; }
+nav ul {
+  text-align: center; }
 
-.left {
-  position: fixed;
-  left: 0;
-  height: 100%; }
+nav li {
+  display: inline-block; }
 
-.right {
-  right: 0;
-  position: absolute;
-  height: 100%; }
-
-.row-2 {
-  height: 50%;
-  width: 100%; }
-
-.row-3 {
-  height: 33.33%;
-  width: 100%; }
-
-.row-4 {
-  height: 25%;
-  width: 100%; }
-
-.image {
-  background: transparent no-repeat;
+.target {
+  background: url("../images/lizard.jpg") no-repeat;
   background-size: cover;
-  background-position: center center; }
+  width: 800px;
+  height: 533px; }
 
-.profile-image {
-  background-image: url(../images/eric.png); }
+.panel {
+  position: absolute;
+  z-index: 9000;
+  box-sizing: border-box; }
+
+.target .panel-1 {
+  font-size: 2em;
+  color: #000;
+  top: 30px;
+  left: 30px;
+  width: 392px;
+  height: 108px;
+  padding: 0.5em; }
 
 /*# sourceMappingURL=main.css.map */

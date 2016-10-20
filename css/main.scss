@@ -16,41 +16,42 @@ $color-background: #333333;
 PAGE SETTINGS
 ===================
 */
-
-body {
-  color: $color-text;
+// body {
+// // }
+// .site-wrapper {
+//   position: static;
+//   height: 100%;
+//   width: 100%;
+// }
+nav {
+  padding: 20px 0;
+  top: 20px;
 }
-section {
-  background: $color-background;
+nav ul {
+  text-align: center;
 }
-
-.left {
-    position: fixed;
-    left: 0;
-    height: 100%;
+nav li {
+  display: inline-block;
 }
-.right {
-  right: 0;
-  position: absolute;
-  height: 100%;
-}
-.row-2 {
-  height: 50%;
-  width: 100%;
-}
-.row-3 {
-  height: 33.33%;
-  width: 100%;
-}
-.row-4 {
-  height: 25%;
-  width: 100%;
-}
-.image {
-  background: transparent no-repeat;
+.target {
+  background: url('../images/lizard.jpg') no-repeat;
   background-size: cover;
-  background-position: center center;
+    width: 800px;
+    height: 533px;
 }
-.profile-image {
-  background-image: url(../images/eric.png);
+
+.panel {
+    position: absolute;
+    z-index: 9000;
+    box-sizing: border-box;
+}
+
+.target .panel-1 {
+    font-size: 2em;
+    color: #000;
+    top: 30px;
+    left: 30px;
+    width: 392px;
+    height: 108px;
+    padding: 0.5em;
 }
