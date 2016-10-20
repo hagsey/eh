@@ -16,7 +16,7 @@ $(function() {
     $(".close, .left").off().on("click", function() {
       $all_articles.slideUp(1200);
       $all_navs.css({
-        'height': '25%',
+        'height': '24.5%',
       });
     });
   });
