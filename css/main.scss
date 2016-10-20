@@ -9,6 +9,7 @@ VARIABLES
 */
 
 $color-text: #ffffff;
+$highlight-color: rgba(255, 255, 23, 0.4);
 $color-background: #333333;
 $bottom-nav-height: 15%;
 $main-container-width: 80%;
@@ -30,6 +31,21 @@ body {
   background-size: cover;
   overflow: hidden;
 }
+
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+p::selection {background: $highlight-color;}
+
+
+
+
+
+
+
+
 .right {
   position: absolute;
   right: 0;
@@ -124,7 +140,7 @@ article {
   -webkit-transform: skew(-20deg);
   -moz-transform: skew(20deg);
   -o-transform: skew(20deg);
-  background: rgba(255, 255, 23, 0.4);
+  background: $highlight-color;
   position: relative;
   top: 20%;
   left: 20px;
