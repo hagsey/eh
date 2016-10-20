@@ -13,6 +13,7 @@ $color-background: #333333;
 $bottom-nav-height: 15%;
 $main-container-width: 80%;
 $nav-container-width: 20%;
+$inner-disc-radius: 20%;
 
 /*
 ===================
@@ -35,40 +36,68 @@ body {
   bottom: 0;
   top: 0;
   width: $nav-container-width;
+
+  ul {
+    height: 100%;
+    li {
+      cursor: pointer;
+    }
+  }
+  .social {
+    padding: 0;
+
+    .black-glass {
+      background-image: url('../images/github.png');
+      background-size: 38%;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .twitter {
+      background-image: url('../images/twitter.png');
+    }
+    .linkedin {
+      background-image: url('../images/linkedin.png');
+    }
+    .instagram {
+      background-image: url('../images/instagram.png');
+
+    }
+
+    .col-2 {
+      height: 100%;
+    }
+  }
+  p {
+    position: relative;
+    text-align: center;
+    line-height: 0;
+    top: 50%;
+  }
 }
+
 .black-glass {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 1em;
   box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+
 }
-nav ul {
-  height: 100%;
-  li {
-    cursor: pointer;
-  }
+.black-glass:hover {
+  background-color: rgba(255, 255, 255, 0.1);
 }
+
+
 .left {
   width: $main-container-width;
   height: 100%;
 }
-.right {
-  .row-4 {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
-    position: relative;
-    p {
-      position: relative;
-      text-align: center;
-      line-height: 0;
-      top: 50%;
-    }
-  }
-}
+
 .main-info {
   position: absolute;
   padding: 1em;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 10%;
+  bottom: 0;
+  left: 20px;
 }
 article {
   width: 80%;
@@ -89,4 +118,18 @@ article {
   right: 1em;
   cursor: pointer;
 }
-
+.shape {
+  width: 120px;
+  height: 140px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: rgba(255, 255, 23, 0.4);
+  position: relative;
+  top: 20%;
+  left: 20px;
+}
+.text {
+  position: relative;
+  left: 75px;
+}
