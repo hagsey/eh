@@ -1,18 +1,18 @@
 $(function() {
   $("nav > ul > li").on("click", function() {
-    console.log("i'm listening")
     var id = $(this).data("nav"),
         $article = $(this).next("article[data-nav='" + id + "']"),
         $all_articles = $("nav").find("article"),
+        $others = $all_articles.not($article),
         $all_navs = $("nav").find("li"),
         $closeBox = $article.find(".close"),
         fade_time = 400;
 
     $all_navs.css({ 'height': '8%'});
-    $all_articles.slideUp();
+    $others.slideUp();
 
 
-    $article.slideToggle();
+    $article.slideDown();
 
     $(".close, .left").off().on("click", function() {
       $all_articles.slideUp(1200);
