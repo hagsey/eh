@@ -2479,8 +2479,25 @@ p::selection {
   position: relative;
   left: 75px; }
 
-.row-4 {
-  transition: all 0.4s ease; }
+/*
+======================
+MENU HEADER
+=======================
+*/
+.menu-header {
+  transition: all 0.4s ease;
+  position: relative;
+  cursor: pointer; }
+  .menu-header h4 {
+    position: relative;
+    text-align: center;
+    line-height: 0;
+    top: 50%; }
+  .menu-header i.fa {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%); }
 
 .right {
   position: absolute;
@@ -2490,13 +2507,6 @@ p::selection {
   width: 50%; }
   .right .nav-container {
     height: 100%; }
-  .right .nav-container > li {
-    cursor: pointer; }
-    .right .nav-container > li h4 {
-      position: relative;
-      text-align: center;
-      line-height: 0;
-      top: 50%; }
 
 .social-icon {
   display: block;
