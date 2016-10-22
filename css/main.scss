@@ -179,6 +179,7 @@ article {
   padding: 1em;
   background: $highlight-color;
   color: #333;
+  font-size: 0.8em;
 
   h1, h2, h3, h4, h5, p {
     margin-bottom: 0.6em;
@@ -187,7 +188,23 @@ article {
     padding-left: 1em;
     margin-bottom: 0.5em;
   }
+  h2 {
+  }
+  h2 {
+    font-weight: 700;
+    margin-top: 1em;
+    font-size: 2em;
+  }
+  span {
+    font-size: 0.9em;
+    color: #6b6b6b;
+  }
+  a.work-anchor {
+    display: block;
+    margin: 1em 0;
+  }
 }
+
 article.about,
 article.contact,
 article.work {
