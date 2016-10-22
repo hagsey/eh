@@ -2463,6 +2463,8 @@ p::selection {
 
 .site-title {
   font-size: 2.2em; }
+  .site-title span {
+    font-size: 0.4em; }
 
 .shape {
   width: 120px;
@@ -2609,6 +2611,9 @@ article.resume {
 
 article.contact {
   background-color: #27ae60; }
+
+article.about a {
+  color: #333; }
 
 .close {
   content: '';

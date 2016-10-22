@@ -54,6 +54,9 @@ p::selection {
 
 .site-title {
   font-size: 2.2em;
+  span {
+    font-size: 0.4em;
+  }
 }
 
 .shape {
@@ -226,6 +229,11 @@ article.resume {
 }
 article.contact {
   background-color: $bg-contact;
+}
+article.about {
+  a {
+    color: #333;
+  }
 }
 .close {
   content: '';
