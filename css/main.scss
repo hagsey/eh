@@ -18,7 +18,7 @@ $bg-contact: #27ae60;
 
 $bottom-nav-height: 15%;
 $main-container-width: 50%;
-$nav-container-width: 50%;
+$nav-container-width: 40%;
 $inner-disc-radius: 20%;
 
 $title-font: 'Rock Salt', cursive;
@@ -104,6 +104,7 @@ MENU HEADER
   bottom: 0;
   top: 0;
   width: $nav-container-width;
+  transition-duration: 0.5s;
 
   .nav-container {
     height: 100%;

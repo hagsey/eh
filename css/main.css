@@ -2506,7 +2506,8 @@ MENU HEADER
   right: 0;
   bottom: 0;
   top: 0;
-  width: 50%; }
+  width: 40%;
+  transition-duration: 0.5s; }
   .right .nav-container {
     height: 100%; }
 
