@@ -2644,6 +2644,7 @@ article.about a {
     bottom: initial; }
 
   .main-info {
+    font-size: 0.8em;
     bottom: initial;
     left: 0;
     padding: 2em; }

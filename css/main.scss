@@ -116,16 +116,16 @@ MENU HEADER
   margin: 10px 0;
 }
  .social-icon:before {
-      content: "";
-      display: inline-block;
-      height: 45px;
-      width: 45px;
-      margin-right: 10px;
-      vertical-align: middle;
-      background-image: transparent;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
+  content: "";
+  display: inline-block;
+  height: 45px;
+  width: 45px;
+  margin-right: 10px;
+  vertical-align: middle;
+  background-image: transparent;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
  }
 
 .twitter:before {
@@ -267,6 +267,7 @@ article.about {
     bottom: initial;
   }
   .main-info {
+    font-size: 0.8em;
     bottom: initial;
     left: 0;
     padding: 2em;
