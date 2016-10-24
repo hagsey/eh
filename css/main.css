@@ -2631,9 +2631,6 @@ article.about a {
   background: #000000; }
 
 @media all and (max-width: 768px) {
-  body {
-    font-size: 0.9em; }
-
   .right {
     width: 100%;
     height: 70%;
