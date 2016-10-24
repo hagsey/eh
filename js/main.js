@@ -5,9 +5,15 @@ $(function() {
 
   var adjustMenuHeight = function(command) {
     if (command === "shrink") {
-      $all_menus.css({ "height": "8%" });
+      $all_menus.css({
+        "height": "8%",
+        "background-color": "rgba(0, 0, 0, 0.9)"
+       });
     } else if (command === "expand") {
-      $all_menus.css({ "height": "25%" });
+      $all_menus.css({
+        "height": "25%",
+        "background-color": "rgba(0, 0, 0, 0.5)"
+      });
     }
   };
 
