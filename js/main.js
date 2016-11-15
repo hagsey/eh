@@ -6,12 +6,12 @@ $(function() {
   var adjustMenuHeight = function(command) {
     if (command === "shrink") {
       $all_menus.css({
-        "height": "10.66%",
+        "height": "8%",
         "background-color": "rgba(0, 0, 0, 0.9)"
        });
     } else if (command === "expand") {
       $all_menus.css({
-        "height": "33.33%",
+        "height": "25%",
         "background-color": "rgba(0, 0, 0, 0.5)"
       });
     }

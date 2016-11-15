@@ -2481,6 +2481,12 @@ p::selection {
   position: relative;
   left: 75px; }
 
+a {
+  color: #03a9f4; }
+
+h5 {
+  margin: 0; }
+
 /*
 ======================
 MENU HEADER
@@ -2506,7 +2512,7 @@ MENU HEADER
   right: 0;
   bottom: 0;
   top: 0;
-  width: 40%;
+  width: 50%;
   transition-duration: 0.5s; }
   .right .nav-container {
     height: 100%; }
@@ -2572,49 +2578,35 @@ article {
   overflow-y: scroll;
   position: relative;
   box-sizing: border-box;
+  background: #fff;
   padding: 1em;
-  background: rgba(255, 98, 113, 0.49);
   color: #333;
   font-size: 0.8em; }
   article h1, article h2, article h3, article h4, article h5, article p {
-    margin-bottom: 0.6em; }
+    margin-bottom: 1em;
+    line-height: 1.5em; }
   article li {
     padding-left: 1em;
     margin-bottom: 0.5em; }
+  article h3 {
+    margin-top: 1em; }
   article h2 {
     font-weight: 700;
     margin-top: 1em;
     font-size: 2em; }
+  article p {
+    margin-bottom: 0.8em; }
   article span {
     font-size: 0.9em;
     color: #6b6b6b; }
-  article a.work-anchor {
-    display: block;
-    margin: 1em 0; }
 
-article.about *,
-article.contact *,
-article.work * {
-  color: #ffffff; }
+article.about img {
+  width: 50%;
+  max-width: 300px;
+  float: right; }
 
-article.about {
-  background-color: #3498db; }
-  article.about img {
-    width: 50%;
-    max-width: 300px;
-    float: right; }
-
-article.work {
-  background-color: #ff6271; }
-
-article.resume {
-  background-color: #f1f1d4; }
-
-article.contact {
-  background-color: #27ae60; }
-
-article.about a {
-  color: #333; }
+article.work h3, article.work p {
+  margin-bottom: 0.2em; }
 
 .close {
   content: '';
