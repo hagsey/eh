@@ -2445,7 +2445,7 @@ body, html {
   color: #ffffff; }
 
 body {
-  background: url("../images/wood.jpg") no-repeat;
+  background: url("../images/02.jpg") no-repeat;
   background-size: cover;
   overflow: hidden; }
 
@@ -2476,10 +2476,6 @@ p::selection {
   position: relative;
   top: 20%;
   left: 20px; }
-
-.text {
-  position: relative;
-  left: 75px; }
 
 a {
   color: #03a9f4; }
@@ -2561,13 +2557,16 @@ MENU HEADER
 
 .left {
   width: 50%;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
 
 .main-info {
-  position: absolute;
+  position: relative;
   padding: 1em;
-  bottom: 0;
-  left: 20px; }
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%); }
 
 /*
 =================
@@ -2628,18 +2627,18 @@ article.work h3, article.work p {
 @media all and (max-width: 768px) {
   .right {
     width: 100%;
-    height: 70%;
+    height: 75%;
     top: initial; }
 
   .left {
     position: absolute;
     top: 0;
-    height: 30%;
+    height: 25%;
     width: 100%;
     bottom: initial; }
 
   .main-info {
-    font-size: 0.8em;
+    font-size: 0.9em;
     bottom: initial;
     left: 0;
     padding: 2em; }
