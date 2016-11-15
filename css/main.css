@@ -2566,7 +2566,8 @@ MENU HEADER
   width: 100%;
   text-align: center;
   top: 50%;
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  box-sizing: border-box; }
 
 /*
 =================
@@ -2646,5 +2647,10 @@ article.work h3, article.work p {
       float: left;
       z-index: 1;
       left: 0; } }
+@media all and (max-width: 530px) {
+  .main-info {
+    font-size: 0.8em; }
+    .main-info span {
+      display: block; } }
 
 /*# sourceMappingURL=main.css.map */
