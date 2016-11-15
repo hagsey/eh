@@ -10,7 +10,7 @@ VARIABLES
 
 $color-text: #ffffff;
 $color-link: #03a9f4;
-$highlight-color: rgba(255, 98, 113, 0.49);
+$highlight-color: #03a9f4;
 $bg-about: #3498db;
 $bg-work: #f1c40f;
 $bg-resume: #f1f1d4;
@@ -21,7 +21,7 @@ $main-container-width: 50%;
 $nav-container-width: 50%;
 $inner-disc-radius: 20%;
 
-$title-font: 'Rock Salt', cursive;
+$title-font: 'Cormorant Garamond', serif;
 
 /*
 ===================
@@ -53,7 +53,7 @@ p::selection {
 }
 
 .site-title {
-  font-size: 2.2em;
+  font-size: 3em;
   span {
     font-size: 0.4em;
   }
@@ -95,6 +95,7 @@ MENU HEADER
     text-align: center;
     line-height: 0;
     top: 50%;
+    font-size: 1.8em;
   }
   i.fa {
     position: absolute;
@@ -118,8 +119,9 @@ MENU HEADER
 }
 
 .social-icon {
-  display: block;
+  display: inline-block;
   margin: 10px 0;
+  color: #000;
 }
  .social-icon:before {
   content: "";
@@ -207,6 +209,7 @@ article {
     font-weight: 700;
     margin-top: 1em;
     font-size: 2em;
+    font-family: $title-font;
   }
   p {
     margin-bottom: 0.8em;

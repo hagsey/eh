@@ -2459,10 +2459,10 @@ p::selection {
   color: #fff; }
 
 .title {
-  font-family: "Rock Salt", cursive; }
+  font-family: "Cormorant Garamond", serif; }
 
 .site-title {
-  font-size: 2.2em; }
+  font-size: 3em; }
   .site-title span {
     font-size: 0.4em; }
 
@@ -2472,7 +2472,7 @@ p::selection {
   -webkit-transform: skew(-20deg);
   -moz-transform: skew(20deg);
   -o-transform: skew(20deg);
-  background: rgba(255, 98, 113, 0.49);
+  background: #03a9f4;
   position: relative;
   top: 20%;
   left: 20px; }
@@ -2500,7 +2500,8 @@ MENU HEADER
     position: relative;
     text-align: center;
     line-height: 0;
-    top: 50%; }
+    top: 50%;
+    font-size: 1.8em; }
   .menu-header i.fa {
     position: absolute;
     right: 1em;
@@ -2518,8 +2519,9 @@ MENU HEADER
     height: 100%; }
 
 .social-icon {
-  display: block;
-  margin: 10px 0; }
+  display: inline-block;
+  margin: 10px 0;
+  color: #000; }
 
 .social-icon:before {
   content: "";
@@ -2593,7 +2595,8 @@ article {
   article h2 {
     font-weight: 700;
     margin-top: 1em;
-    font-size: 2em; }
+    font-size: 2em;
+    font-family: "Cormorant Garamond", serif; }
   article p {
     margin-bottom: 0.8em; }
   article span {
