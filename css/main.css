@@ -2447,7 +2447,8 @@ body, html {
 body {
   background: url("../images/02.jpg") no-repeat;
   background-size: cover;
-  overflow: hidden; }
+  overflow: hidden;
+  font-family: Helvetica Neue, Times; }
 
 h1::selection,
 h2::selection,
