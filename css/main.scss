@@ -21,7 +21,7 @@ $main-container-width: 50%;
 $nav-container-width: 50%;
 $inner-disc-radius: 20%;
 
-$title-font: 'Cormorant Garamond', serif;
+// $title-font: "Overpass", sans-serif;
 
 /*
 ===================
@@ -37,7 +37,7 @@ body {
   background: url('../images/02.jpg') no-repeat;
   background-size: cover;
   overflow: hidden;
-  font-family: Helvetica Neue, Times;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 h1::selection,
@@ -50,11 +50,12 @@ p::selection {
   color: #fff;
 }
 .title {
-  font-family: $title-font;
+  font-weight: 200;
+  font-size: 1em;
+  text-transform: uppercase;
 }
-
 .site-title {
-  font-size: 3em;
+  font-size: 2em;
   span {
     font-size: 0.4em;
   }
@@ -92,7 +93,7 @@ MENU HEADER
     text-align: center;
     line-height: 0;
     top: 50%;
-    font-size: 1.8em;
+    font-size: 1.2em;
   }
   i.fa {
     position: absolute;
@@ -113,41 +114,6 @@ MENU HEADER
   .nav-container {
     height: 100%;
   }
-}
-
-.social-icon {
-  display: inline-block;
-  margin: 10px 0;
-  color: #000;
-}
-.social-icon:before {
-  content: "";
-  display: inline-block;
-  height: 45px;
-  width: 45px;
-  margin-right: 10px;
-  vertical-align: middle;
-  background-image: transparent;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.twitter:before {
-  background-image: url('../images/social/twitter.png');
-}
-.linkedin:before {
-  background-image: url('../images/social/linkedin.png');
-}
-.instagram:before {
-  background-image: url('../images/social/instagram.png');
-}
-.mail:before {
-  background-image: url('../images/social/mail.png');
-}
-
-.github:before {
-  background-image: url('../images/social/github.png');
 }
 
 .black-glass {
@@ -210,7 +176,6 @@ article {
     font-weight: 700;
     margin-top: 1em;
     font-size: 2em;
-    font-family: $title-font;
   }
   p {
     margin-bottom: 0.8em;
@@ -262,9 +227,6 @@ article.work {
     height: 30%;
     width: 100%;
     bottom: initial;
-  }
-  .menu-header h4 {
-    font-size: 1.3em;
   }
   .main-info {
     font-size: 0.9em;
